@@ -1,0 +1,90 @@
+<template name="code_compiler">
+    <style>
+        .buttonClass {
+            border-radius: 13px;
+            width: 110px;
+            height: 40px;
+            text-align: center
+        }
+
+    </style>
+
+    <h1 style="text-align: center; padding-top: 30px">
+        <img style="width: 300px" src="/images/mooqita.jpg">
+    </h1>
+
+    <div class="row" style="height:98%;width:98%">
+        <div class="col-sm-3" style="border-right:0.5px solid #BEBEBE;">
+            <div style="height:100px;margin-left:30px;margin-top:10px">
+                <div class="row">
+                    <button type="button" class="btn-default buttonClass glyphicon glyphicon-th-list" style="">Levels
+                    </button>
+                    <span style="color: #707070;font-size: 20px;margin-left: 10px;font-weight: bold;">Print activity</span>
+                </div>
+                <div class="row" style="height:15px"></div>
+                <div class="row">
+                    <button type="button" class="btn btn-default pull-right buttonClass" style="margin-right:10px">
+                        Resources
+                    </button>
+                </div>
+            </div>
+            <div class="row" style="height:40px"></div>
+            <div class="" id="activity_directions"
+                 style="margin-left:10px;width:98%;border:0.5px solid #BEBEBE;text-align:center">
+                <span style="font-size:30px">Activity Directions</span>
+                <p> Write a program using print statements to <br/>
+                    Write a program using print statements to <br/>
+                    Write a program using print statements to<br/>
+                    Write a program using print statements to<br/>
+                </p><br/><br/>
+                Write a program using<br/>
+                Write a program using<br/>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="row-sm-2" style="text-align: center;padding: 10px;">
+                    <span style="color: #707070;font-size: 20px;margin-left: 10px;font-weight: bold;">Your Code</span>
+                </div>
+
+                <div></div>
+                <div class="row-sm-8 table-bordered">
+                   <textarea id="test" rows="20" style="width:auto;" cols="70"></textarea>
+                </div>
+                <div class="row" style="height:15px"></div>
+                <div class="row-sm-2">
+
+                    <button type="button" class="btn-default pull-left buttonClass" id="code">Run Code
+                    </button>
+                    <button type="button" class="pull-right btn-default buttonClass">Open Toolbox
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="row">
+                <div class="row-sm-2" style="height:40px;margin-top:7px">
+			<span style="color: #707070;font-size: 20px;margin-left: 10px;font-weight: bold;">Your
+                Solution </span>
+                    <button type="button" class="pull-right btn-default buttonClass">Peer Review
+                    </button>
+                </div>
+
+                <div></div>
+                <div class="row-sm-8">
+                <textarea disabled class="form-control" rows="20" columns="10" id="output"
+                          style="resize: none; background-color: black; color:white"></textarea>
+
+                </div>
+                <div class="row-sm-2" rows="2" style="margin-left:40px">
+                    <h3>Output Criteria</h3>
+                    <p class="glyphicon glyphicon-ok-circle">
+                    <p style="display:inline">&nbsp;Has three lines of code</p></p>
+                    <p class="glyphicon glyphicon-ok-circle">
+                    <p style="display:inline">&nbsp;Used a print statement</p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</template>
